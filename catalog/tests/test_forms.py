@@ -2,13 +2,11 @@ from django.test import TestCase
 
 # Create your tests here.
 
-import datetime
-from django.utils import timezone
-from catalog.forms import RenewBookForm
+from catalog.models import Author
 
-class RenewBookFormTest(TestCase):
-             
-@classmethod
+class AuthorModelTest(TestCase):
+
+    @classmethod
     def setUpTestData(cls):
         #Set up non-modified objects used by all test methods
         Author.objects.create(first_name='Big', last_name='Bob')
