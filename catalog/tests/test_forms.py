@@ -8,9 +8,12 @@ from catalog.forms import RenewBookForm
 
 class RenewBookFormTest(TestCase):
              
-    def test_renew_form_date_field_help_text(self):
-        """
-        Test renewal_date help_text is as expected.
-        """
-        form = RenewBookForm()
-self.assertEqual(form.fields['renewal_date'].help_text,'Enter a date between now and 4 weeks (default 3).')
+@classmethod
+    def setUpTestData(cls):
+        #Set up non-modified objects used by all test methods
+        Author.objects.create(first_name='Big', last_name='Bob')
+
+    def test_first_name_label(self):
+        author=Author.objects.get(id=1)
+        field_label = author._meta.get_field('first_name').verbose_name
+        self.assertEquals(field_label,'first name')
