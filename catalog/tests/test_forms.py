@@ -58,4 +58,4 @@ class RenewBookFormTest(TestCase):
         Test renewal_date help_text is as expected.
         """
         form = RenewBookForm()
-self.assertEqual(form.fields['renewal_date'].help_text,'Enter a date between now and 4 weeks (default 3).')
+        self.assertEqual(form.fields['renewal_date'].help_text,'Enter a date between now and 4 weeks (default 3).')
