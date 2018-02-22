@@ -36,4 +36,4 @@ The main features that have currently been implemented are:
 Documentation (guides, references, and associated images) is licensed as Creative Commons Attribution-NonCommercial-ShareAlike CC BY-NC-SA. The full license can be found [here](http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode), and the human-readable summary [here](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 Everything in this repository not covered above is licensed under the [included CC0 license](LICENSE).
-
+///
